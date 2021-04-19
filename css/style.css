@@ -269,6 +269,18 @@ p {
 .our-team-content {
   padding: 30px 32px;
 }
+.our-clients {
+  padding: 94px 0;
+}
+.our-clients-title {
+  color: var(--main-text-cl);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
