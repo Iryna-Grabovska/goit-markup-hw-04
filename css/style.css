@@ -12,6 +12,8 @@ a {
   --dark-bg: #2f303a;
   --text-white: #ffffff;
   --maim-font: "Roboto", sans-serif;
+  --bg-cl-icon: #f5f4fa;
+  --icon-cl:#AFB1B8;
 }
 html {
   box-sizing: border-box;
@@ -95,10 +97,12 @@ p {
 .auth .contakts-mail:hover,
 .auth .contakts-mail :focus {
   color: var(--btn-cl);
+  fill: var(--btn-cl);
 }
 .auth .contakts-tel:hover,
 .auth .contakts-tel:focus {
   color: var(--btn-cl);
+  fill: var(--btn-cl);
 }
 .site-nav-link {
   font-weight: 500;
@@ -124,6 +128,7 @@ p {
 .auth {
   display: flex;
   margin-left: auto;
+  text-align: center;
 }
 .auts-list-item:not(:last-child) {
   margin-right: 50px;
@@ -145,6 +150,8 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  display: flex;
+  text-align: center;
 }
 .herro {
   max-width: 1600px;
@@ -167,7 +174,7 @@ p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: #ffffff;
+  color: var(--text-white)
   margin-bottom: 30px;
 }
 .herro-button {
@@ -202,6 +209,17 @@ p {
 .feature-list-item:not(:last-child) {
   margin-right: 20px;
 }
+.features-rectangle {
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--bg-cl-icon);
+  border-radius: 4px;
+}
+
 .title {
   font-size: 14px;
   font-weight: bold;
@@ -225,6 +243,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pargf-cl);
+  margin-bottom: 16px;
 }
 .our-work {
   background: var(--text-white);
@@ -269,6 +288,20 @@ p {
 .our-team-content {
   padding: 30px 32px;
 }
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-item {
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--icon-cl);
+}
 .our-clients {
   padding: 94px 0;
 }
@@ -281,6 +314,24 @@ p {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.our-clients-list{
+  display: flex;
+  justify-content: space-between;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  border: 1px solid var(--icon-cl);
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--btn-cl);
+  }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -356,6 +407,36 @@ p {
 }
 .footer-post {
   display: block;
+}
+.footer-social {
+  width: 206px;
+  }
+.footer-social-title{
+  font-weight: bold;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: var(--text-white);
+display: inline-block;
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  }
+  .footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--icon-color);
+  background-color: inherit;
+  fill: currentColor;
 }
 .contacts {
   margin-top: 20px;
