@@ -89,6 +89,7 @@ p {
   display: flex;
   margin-left: 93px;
 }
+
 .nav .site-nav-link:hover,
 .nav .site-nav-link:focus {
   color: var(--btn-cl);
@@ -102,9 +103,13 @@ p {
 .auth .contakts-tel:focus {
   color: var(--btn-cl);
 }
-.link {
-  fill: currentColor;
+.contakts-tel:hover .link,
+.contakts-tel:focus .link {
+  fill: var(--btn-cl);
 }
+.contakts-mail:hover .link,
+.contakts-mail:focus .link {
+  fill: var(--btn-cl);
 }
 .site-nav-link {
   font-weight: 500;
@@ -296,10 +301,9 @@ p {
 }
 .social-list-item {
 }
-.social-link :hover,
-.social-link :focus {
-  color: var(--text-white);
-  background-color: var(--btn-cl);
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
+  fill: var(--btn-cl);
 }
 .social-link {
   width: 44px;
@@ -308,8 +312,6 @@ p {
   border-radius: 50%;
   text-decoration: none;
   color: var(--icon-cl);
-  background-color: inherit;
-  fill: currentColor;
 }
 .our-clients {
   padding: 94px 0;
@@ -340,6 +342,7 @@ p {
 .client-link:hover,
 .client-link:focus {
   border-color: var(--btn-cl);
+  fill: var(--btn-cl);
 }
 .footer {
   padding-top: 60px;
@@ -393,6 +396,7 @@ p {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
 .footer-contakts {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -414,9 +418,7 @@ p {
 .footer-contakts-title:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-post {
-  display: block;
-}
+
 .footer-social {
   width: 206px;
   display: block;
@@ -444,15 +446,10 @@ p {
 
   border-radius: 50%;
   text-decoration: none;
-  background-color: var(--text-white);
-  color: rgba(255, 255, 255, 0.1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
-  color: var(--text-white);
-  background-color: var(--btn-cl);
 }
-
 .contacts {
   margin-top: 20px;
   font-style: inherit;
