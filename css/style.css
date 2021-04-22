@@ -111,6 +111,10 @@ p {
 .contakts-mail:focus .link {
   fill: var(--btn-cl);
 }
+.contakts-mail,
+.contakts-tel {
+  fill: currentColor;
+}
 .site-nav-link {
   font-weight: 500;
   line-height: 1.14;
@@ -299,12 +303,12 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.social-list-item {
+
+.social-link:hover .social-link:focus {
+  background-color: var(--text-white);
+  color: var(--btn-cl);
 }
-.social-link:hover .social-link-icon,
-.social-link:focus .social-link-icon {
-  fill: var(--btn-cl);
-}
+
 .social-link {
   width: 44px;
   height: 44px;
@@ -312,7 +316,10 @@ p {
   border-radius: 50%;
   text-decoration: none;
   color: var(--icon-cl);
+  background-color: inherit;
+  fill: currentColor;
 }
+
 .our-clients {
   padding: 94px 0;
 }
@@ -335,7 +342,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  fill: var(--icon-cl);
   border-radius: 4px;
   border: 1px solid var(--icon-cl);
 }
@@ -418,7 +425,10 @@ p {
 .footer-contakts-title:not(:last-child) {
   margin-bottom: 9px;
 }
-
+.container .footer-social {
+  display: flex;
+  align-items: baseline;
+}
 .footer-social {
   width: 206px;
   display: block;
@@ -448,7 +458,12 @@ p {
   text-decoration: none;
 }
 .footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-icon .footer-social-link:focus .footer-social-icon {
+  fill: var(--btn-cl);
+}
+.footer-social-list-item .footer-social-link {
+  color: var(--text-white);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .contacts {
   margin-top: 20px;
