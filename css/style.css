@@ -304,7 +304,8 @@ p {
   justify-content: space-between;
 }
 
-.social-link:hover .social-link:focus {
+.social-link:hover .social-link-icon,
+.social-link:focus .social-link-icon {
   background-color: var(--text-white);
   color: var(--btn-cl);
 }
@@ -316,7 +317,6 @@ p {
   border-radius: 50%;
   text-decoration: none;
   color: var(--icon-cl);
-  background-color: inherit;
   fill: currentColor;
 }
 
