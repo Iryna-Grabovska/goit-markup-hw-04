@@ -55,10 +55,21 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-cl);
+  margin-bottom: 10px;
+}
+
 .header {
   margin-left: 0;
   border-bottom: 1px solid #ececec;
 }
+/* #region main*/
 .main-nav {
   display: flex;
   background: var(--text-white);
@@ -132,10 +143,6 @@ p {
   padding-bottom: 32px;
   display: block;
 }
-.herro-button:hover,
-.herro-button:focus {
-  background-color: #188ce8;
-}
 .auth {
   display: flex;
   margin-left: auto;
@@ -163,6 +170,13 @@ p {
   display: block;
   display: flex;
   text-align: center;
+}
+/*#endregion main*/
+
+/*#region herro*/
+.herro-button:hover,
+.herro-button:focus {
+  background-color: #188ce8;
 }
 .herro {
   max-width: 1600px;
@@ -210,6 +224,8 @@ p {
   top: 430px;
   border-style: none;
 }
+/*#endregion herro*/
+/*#region features*/
 .features {
   background: var(--text-white);
   padding-top: 94px;
@@ -234,16 +250,6 @@ p {
   border-radius: 4px;
 }
 
-.title {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-text-cl);
-  margin-bottom: 10px;
-}
-
 .title-h-three {
   font-weight: bold;
   font-size: 16px;
@@ -259,6 +265,9 @@ p {
   color: var(--pargf-cl);
   margin-bottom: 16px;
 }
+/*#endregion features*/
+
+/*#region our-work*/
 .our-work {
   background: var(--text-white);
   padding-top: 94px;
@@ -280,8 +289,10 @@ p {
 .our-work-item:not(:last-child) {
   margin-right: 30px;
 }
+/*#endregion our-work*/
+/*#region our-team*/
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--bg-cl-icon);
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -327,6 +338,8 @@ p {
   fill: currentColor;
 }
 
+/*#endregion our-team*/
+/*#region our-clients*/
 .our-clients {
   padding: 94px 0;
 }
@@ -359,6 +372,7 @@ p {
   border-color: var(--btn-cl);
   fill: var(--btn-cl);
 }
+/*#endregion our-clients*/
 .footer > .container {
   display: flex;
   align-items: baseline;
